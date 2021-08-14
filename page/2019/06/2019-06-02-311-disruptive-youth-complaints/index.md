@@ -1,0 +1,30 @@
+---
+title: "311 \"Disruptive Youth\" Complaints"
+date: "2019-06-02"
+---
+
+How might data on the last decade of 311 “disruptive youth” complaints shed light on opportunities to help New York City kids? Are there hotspots that need youth centers or greater programming? Do young people get in trouble at predictable times of the day, week, or year?
+
+I entered this investigation believing that answers to these questions could inform community boards, youth organizations, or arts programs as they make decisions about where and when to offer engaging options for kids.
+
+Visualizing the data, though, reveals two simple truths. First, that a strong economy, more than anything, radically reduces the number of such complaints. Second, that these visualizations might best be used to educate those, like me, with biases based on race, class, neighborhood, and age.
+
+A map of the reports by location chips away at assumptions about correlations between incidents and class: no particular neighborhood is particularly ripe for “disruptive youth.” Yes, on first glance, it seems that Harlem and the Bronx are complaint-heavy, but isolating the data year to year with the provided filter and zooming in more closely shows that the incidents are fairly equally dispersed across the city with only a slight concentration in Washington Heights and Flatbush. The untouched areas are those that seem simply undesirable both to kids and to complainers, such as industrial neighborhoods and medical campuses.
+
+Graphing the incidents over time reveals more. At first, the results seem to confirm what may be societal assumption: that young people get “disruptive” when they are not in school. Incident rates look highest in the evening, on weekends, and during the summer. But a closer look challenges even that assumption. The graph by hour points to 7pm as the ripest time—a far cry from the media portrayal of late-night marauding teens. The graph by day pokes holes in the assumption that school is a determining factor, as complaints on Sunday are fewer than on Monday. The graph by month seems to connect incidents more closely to increasing daylight hours than any other factor, as complaints rise steadily from March to their peak in June and fall away to their nadir in December. Again, school seems less of a factor, as incidents are lower in July and August than in April and May, and they are lower still from November to February, despite week-long school vacations in two of those four months.
+
+The most startling visualization is the line graph depicting the nearly exponential drop in complaints over the course of the decade. It suggests that complaints of "disruptive youth" are virtually nonexistent now. It also speaks to the story of the city’s economic recovery from the 2008 recession. According to [data](https://comptroller.nyc.gov/reports/new-york-city-quarterly-economic-update/) from the NYC Comptroller, unemployment was high in 2009 at nearly 10%, when 1,926 “disruptive youth” incidents were reported, and it is now less than half that in 2019 at 4% when only 31 incidents have been reported in the first half of the year. No other factor I investigated, including implementation of educational policies and changes in political leadership, seemed to have a similar correlation.
+
+https://public.tableau.com/views/311\_Disorderly\_Youth/Dashboard1?:embed=y&:display\_count=yes&publish=yes&:origin=viz\_share\_link
+
+The nature of the data drove my visualization decisions. Thanks to the latitude and longitude recorded for each complaint, the dot density map allowed precision that ultimately challenged my own assumptions about “risky” neighborhoods. I provided a filter by year on the dashboard to show that the seeming concentration in Washington Heights, Inwood, and the Bronx is largely a result of the earliest years of the data. Oversimplifying by aggregating incidents by borough or abstracting the geographic data into categories and numbers for a bar or pie chart would have potentially hidden that insight and may have reinforced class and racial stereotypes.
+
+For three of the four charts depicting data over time, bar graphs provided the most powerful and concrete view. They chunked the data in discrete packets of time easy to comprehend. Line graphs, while tempting, represented the data as more granular than it actually was, as the connective lines suggested increases or decreases over minutes or across days in each month.
+
+I chose a line graph for the yearly visualization because it focused on the direction of the complaints—a nearly exponential decline since the recession of 2008. Here, I was trying to communicate the trend more than the numbers across discrete packets of time. As for color, playing around with a variety of hues convinced me that Tableau’s default blue was simply the easiest on the eyes. I diverged only with the dot density map, finding that the shade of red I chose at about 40% opacity provided the clearest view against the shades of gray of the underlying map.
+
+As noted at the bottom of the dashboard, I excluded 2009 data from the hourly visualization, as all 1,926 incidents that year were reported at midnight — clearly a default setting rather than authentic data.
+
+As for next steps, I’d like to expand my range. My initial exploration of the data set from 2010 - 2019 compelled me to do some further research which led me to the economic forces at work, which in turn compelled me to clean data from 2009 — something that was challenging as I’m just learning Tableau. I’d like to dig into the other years available, 2005 – 2008, to broaden the picture even further. I'd also like a broader background on the nature of 311 complaints and what qualifies as "disruptive youth." While the data say that all of these complaints were handled by the NYPD, I don't know whether similar calls go straight to precincts or 911.
+
+I’d also love to learn how to join data. I tried to join a range of other data sets—temperature, daylight hours, and, most compellingly, employment rates—but got errors, even when I created calculated fields in my original set to match fields in the new sets.
